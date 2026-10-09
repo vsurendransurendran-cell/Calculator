@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive calculator built with HTML, CSS, and JavaScript for a CodeAlpha frontend task.">
+  <title>Calculator | CodeAlpha Project</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="calculator" aria-label="Calculator">
+      <header class="calculator-header">
+        <div>
+          <p class="eyebrow">CODEALPHA · FRONTEND TASK</p>
+          <h1>Calculator</h1>
+        </div>
+        <span class="status-dot" aria-label="Calculator ready"></span>
+      </header>
+
+      <div class="display" aria-live="polite" aria-atomic="true">
+        <div id="expression" class="expression"></div>
+        <output id="result" class="result" aria-label="Calculator display">0</output>
+      </div>
+
+      <div class="keypad" aria-label="Calculator keys">
+        <button class="key key-function" data-action="clear" type="button">AC</button>
+        <button class="key key-function" data-action="delete" type="button" aria-label="Delete last digit">⌫</button>
+        <button class="key key-operator" data-operator="%" type="button">%</button>
+        <button class="key key-operator" data-operator="/" type="button" aria-label="Divide">÷</button>
+
+        <button class="key" data-number="7" type="button">7</button>
+        <button class="key" data-number="8" type="button">8</button>
+        <button class="key" data-number="9" type="button">9</button>
+        <button class="key key-operator" data-operator="*" type="button" aria-label="Multiply">×</button>
+
+        <button class="key" data-number="4" type="button">4</button>
+        <button class="key" data-number="5" type="button">5</button>
+        <button class="key" data-number="6" type="button">6</button>
+        <button class="key key-operator" data-operator="-" type="button" aria-label="Subtract">−</button>
+
+        <button class="key" data-number="1" type="button">1</button>
+        <button class="key" data-number="2" type="button">2</button>
+        <button class="key" data-number="3" type="button">3</button>
+        <button class="key key-operator" data-operator="+" type="button" aria-label="Add">+</button>
+
+        <button class="key key-function" data-action="sign" type="button">+/−</button>
+        <button class="key" data-number="0" type="button">0</button>
+        <button class="key" data-action="decimal" type="button">.</button>
+        <button class="key key-equals" data-action="equals" type="button" aria-label="Calculate result">=</button>
+      </div>
+      <footer class="calculator-footer">Use your keyboard or tap the buttons</footer>
+    </section>
+    <p class="page-note">Simple, responsive, and ready to run locally.</p>
+  </main>
+</body>
+</html>
